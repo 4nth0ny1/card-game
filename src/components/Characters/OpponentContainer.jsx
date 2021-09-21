@@ -11,7 +11,6 @@ const OpponentContainer = (props) => {
 
     return(
         <>
-            <hr></hr>
             <button>add character</button>
             {opponentArray}
         </>

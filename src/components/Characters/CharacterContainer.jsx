@@ -8,7 +8,7 @@ const CharacterContainer = (props) => {
 
     const characterArray = props.characters.map(character => {
         if (character.type === 'leader') {
-            return <Character key={character.id} character={character} />
+            return <Character key={character.id} src={character.image} character={character} />
         }
     })
 
@@ -26,7 +26,6 @@ const CharacterContainer = (props) => {
 
     return(
         <>
-            <hr></hr>
             <button onClick={handleAddCharacter}>add character</button>
             {characterArray}
             {showCharacters}

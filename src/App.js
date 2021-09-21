@@ -32,45 +32,50 @@ function App(props) {
       {
         id: 1, 
         name: 'ajax',
+        image: './images/warrior.png',
         type: 'leader',
         attack: 10, 
-        defense: 10, 
+        life: 100, 
         primary_skill: 'leadership',
         secondary_skill: 'coerce'
       }, 
       {
         id: 2, 
         name: 'carter',
+        image: './images/carter.png',
         type: 'engineer',
         attack: 10, 
-        defense: 15, 
+        life: 100, 
         primary_skill: '',
         secondary_skill: ''
       }, 
       {
         id: 3, 
         name: 'tealc',
+        image: '',
         type: 'assault',
         attack: 20, 
-        defense: 10, 
+        life: 100, 
         primary_skill: '',
         secondary_skill: ''
       }, 
       {
         id: 4, 
         name: 'legend',
+        image: '',
         type: 'sniper',
         attack: 10, 
-        defense: 10, 
+        life: 100, 
         primary_skill: '',
         secondary_skill: ''
       }, 
       {
         id: 4, 
         name: 'maverick',
+        image: '',
         type: 'medic',
         attack: 10, 
-        defense: 10, 
+        life: 100, 
         primary_skill: '',
         secondary_skill: ''
       }, 
@@ -127,7 +132,6 @@ function App(props) {
   return (
     <>
     <div className="App">
-      <h1>card game</h1>
       <OpponentContainer characters={characters}/>
       <DiceLogic />
       <CardContainer cards={cards} />
