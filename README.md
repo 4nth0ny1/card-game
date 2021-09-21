@@ -1,3 +1,23 @@
+team based card game. monthly fee. instead of buying new cards and slot machine. 
+
+1 vs 1 
+3 vs 3 or any version of that. 1 vs 3 is ok
+
+Leader
+Specialist (Demo, Sniper, Assault, Medic, Engineer)    
+
+Each type of player can do anything, but if you are using a specialist then the specialist can do specialty actions easier. 
+What is meant by easier is more of a probability to accomplish the task. 
+
+So a Doctor will have a very high chance of saving a wounded demo specialist but a leader will have less of a chance. It's possible but not likely unless you increase your luck or give yourself a tempoorary skill boost with a card. It's better to have a skilled person. 
+
+Game Flow
+User either creates account or signs in 
+
+Play 1v1 or multiplayer
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
