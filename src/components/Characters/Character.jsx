@@ -10,7 +10,7 @@ const Character = (props) => {
             <p>defense: {props.character.defense}</p>    
             <p>primary skill: {props.character.primary_skill}</p>  
             <p>secondary skill: {props.character.secondary_skill}</p>  
-            <hr></hr>  
+            
         </>
     ) 
 }

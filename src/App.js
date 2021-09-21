@@ -3,6 +3,7 @@ import React from 'react'
 import DiceLogic from './components/Dice/DiceLogic';
 import CardContainer from './components/Cards/CardContainer';
 import CharacterContainer from './components/Characters/CharacterContainer';
+import OpponentContainer from './components/Characters/OpponentContainer';
 
 function App(props) {
 
@@ -127,10 +128,10 @@ function App(props) {
     <>
     <div className="App">
       <h1>card game</h1>
+      <OpponentContainer characters={characters}/>
       <DiceLogic />
       <CardContainer cards={cards} />
       <CharacterContainer characters={characters} />
-      
     </div>
     </>
   );
