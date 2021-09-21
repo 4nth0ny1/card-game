@@ -2,6 +2,7 @@ import './App.css';
 import React from 'react'
 import DiceLogic from './components/Dice/DiceLogic';
 import CardContainer from './components/Cards/CardContainer';
+import CharacterContainer from './components/Characters/CharacterContainer';
 
 function App(props) {
 
@@ -25,6 +26,54 @@ function App(props) {
     //     coerce
 
     //when someone other than the specialty player plays the card then it's .50-.75 effectiveness
+
+    const characters = [
+      {
+        id: 1, 
+        name: 'ajax',
+        type: 'leader',
+        attack: 10, 
+        defense: 10, 
+        primary_skill: 'leadership',
+        secondary_skill: 'coerce'
+      }, 
+      {
+        id: 2, 
+        name: 'carter',
+        type: 'engineer',
+        attack: 10, 
+        defense: 15, 
+        primary_skill: '',
+        secondary_skill: ''
+      }, 
+      {
+        id: 3, 
+        name: 'tealc',
+        type: 'assault',
+        attack: 20, 
+        defense: 10, 
+        primary_skill: '',
+        secondary_skill: ''
+      }, 
+      {
+        id: 4, 
+        name: 'legend',
+        type: 'sniper',
+        attack: 10, 
+        defense: 10, 
+        primary_skill: '',
+        secondary_skill: ''
+      }, 
+      {
+        id: 4, 
+        name: 'maverick',
+        type: 'medic',
+        attack: 10, 
+        defense: 10, 
+        primary_skill: '',
+        secondary_skill: ''
+      }, 
+    ]
 
     const cards = [
       {
@@ -79,7 +128,9 @@ function App(props) {
     <div className="App">
       <h1>card game</h1>
       <DiceLogic />
-      <CardContainer cards={cards}/>
+      <CardContainer cards={cards} />
+      <CharacterContainer characters={characters} />
+      
     </div>
     </>
   );
