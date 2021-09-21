@@ -5,6 +5,7 @@ import CardContainer from './components/Cards/CardContainer';
 import CharacterContainer from './components/Characters/CharacterContainer';
 import OpponentContainer from './components/Characters/OpponentContainer';
 
+
 function App(props) {
 
     // types of cards 
@@ -52,7 +53,7 @@ function App(props) {
       {
         id: 3, 
         name: 'tealc',
-        image: '',
+        image: './images/carter.png',
         type: 'assault',
         attack: 20, 
         life: 100, 

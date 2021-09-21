@@ -5,7 +5,7 @@ const Character = (props) => {
         
             <p>id: {props.character.id}</p>      
             <p>name: {props.character.name}</p>   
-            <img alt="character thumbnail" className="character-thumbnail" href={props.character.image}></img>    
+            <img alt="character thumbnail" className="character-thumbnail" src={props.character.image} />    
             <p>type: {props.character.type}</p>  
             <p>attack: {props.character.attack}</p>      
             <p>life: {props.character.life}</p>    
