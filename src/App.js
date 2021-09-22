@@ -85,6 +85,7 @@ function App(props) {
     const cards = [
       {
         id: 1,
+        image: './images/carter.png',
         name: 'p90',
         rarity: 'rare', //rare, uncommon, common
         attack: Math.floor(Math.random() * (12) + 7),
@@ -92,6 +93,7 @@ function App(props) {
       },
       {
         id: 2,
+        image: './images/carter.png',
         name: 'ak47',
         rarity: 'uncommon', //rare, uncommon, common
         attack: Math.floor(Math.random() * (7) + 3),
@@ -99,6 +101,7 @@ function App(props) {
       },
       {
         id: 3,
+        image: './images/carter.png',
         name: 'glock',
         rarity: 'common', //rare, uncommon, common
         attack: Math.floor(Math.random() * (3) + 1),
@@ -106,6 +109,7 @@ function App(props) {
       },
       {
         id: 4,
+        image: './images/carter.png',
         name: 'barrett 50cal',
         rarity: 'rare', //rare, uncommon, common
         attack: Math.floor(Math.random() * (15) + 8),
@@ -113,6 +117,7 @@ function App(props) {
       },
       {
         id: 5,
+        image: './images/carter.png',
         name: 'm4',
         rarity: 'uncommon', //rare, uncommon, common
         attack: Math.floor(Math.random() * (7) + 3),
@@ -120,6 +125,7 @@ function App(props) {
       },
       {
         id: 6,
+        image: './images/carter.png',
         name: 'silenced pp7',
         rarity: 'common', //rare, uncommon, common
         attack: Math.floor(Math.random() * (4) + 2),
@@ -134,11 +140,26 @@ function App(props) {
     <>
     <div className="App">
       <OpponentContainer characters={characters}/>
-      <DiceLogic />
       <CardContainer cards={cards} />
-      <CharacterContainer characters={characters} />
+      <div className="player-dashboard"> 
+        <CharacterContainer characters={characters} />
+        <DiceLogic />
+      </div>
     </div>
     </>
+
+    {/* <>
+    <div className="App">
+      <OpponentHandContainer />
+      <OpponentPlayerContainer />
+      <OpponentBoardContainer />
+      <hr></hr>
+      <PlayerBoardContainer />
+      <PlayerPlayerContainer />
+      <PlayerHandContainer />
+    </div>
+    </>
+   */}
   );
 }
 

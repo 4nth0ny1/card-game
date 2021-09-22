@@ -1,12 +1,34 @@
 .App {
   text-align: center;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
 }
 
-.character-thumbnail {
-  width: 100px;
-  height: 100px;
+.card {
+  border: 10px solid black;
+  background: rgba(243, 216, 126, 0.658);
+  border-radius: 10px;
+  width: 200px;
+  margin: 0 auto;
+}
+
+.card-thumbnail {
+  width: 200px;
+  height: 200px;
+  margin: 0px;
+}
+
+.swords {
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.card > p {
+  margin: 0px;
+}
+
+.player-dashboard {
+  display: flex;
 }
 
 .App-logo {
