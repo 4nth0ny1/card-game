@@ -1,12 +1,32 @@
 .App {
   text-align: center;
-  width: 100%;
-  height: 100%;
+  width: 100wh;
+  height: 100vh;
+  position: relative;
 }
 
-.player-hand-container, .opponent-hand-container, .player-character-container, .opponent-character-container {
+.player-hand-container, .opponent-hand-container, .player-character-container, .opponent-character-container, .player-board-container, .opponent-board-container {
   display: flex;
 }
+
+.player-board-container, .opponent-board-container {
+  background: black;
+  width: 90%;
+  height: 20vh;
+  margin: 0 auto;
+}
+
+.board-container {
+
+  margin: 100px;
+}
+
+.player-dash-container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
 
 .card {
   border: 10px solid black;

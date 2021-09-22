@@ -5,8 +5,8 @@ import React from 'react'
 
 import OpponentHandContainer from './Components/Containers/Opponent/OpponentHandContainer'
 import OpponentCharacterContainer from './Components/Containers/Opponent/OpponentCharacterContainer'
-// import OpponentBoardContainer from './Components/Containers/Opponent/OpponentBoardContainer'
-// import PlayerBoardContainer from './Components/Containers/Player/PlayerBoardContainer'
+import OpponentBoardContainer from './Components/Containers/Opponent/OpponentBoardContainer'
+import PlayerBoardContainer from './Components/Containers/Player/PlayerBoardContainer'
 import PlayerCharacterContainer from './Components/Containers/Player/PlayerCharacterContainer'
 import PlayerHandContainer from './Components/Containers/Player/PlayerHandContainer'
 
@@ -106,11 +106,15 @@ function App(props) {
       <div className="App">
           <div className="opponent-hand-container"><OpponentHandContainer cards={cards}/></div>
           <div className="opponent-character-container"><OpponentCharacterContainer  characters={characters} /></div>
-          {/* <div className="opponent-board-container"><OpponentBoardContainer /></div> */}
-          <hr></hr>
-          {/* <div className="player-board-container"><PlayerBoardContainer /></div> */}
-          <div className="player-character-container"><PlayerCharacterContainer characters={characters}/></div>
-          <div className="player-hand-container"><PlayerHandContainer cards={cards}/></div>
+          <div className="board-container">
+            <div className="opponent-board-container"><OpponentBoardContainer cards={cards}/></div>
+            <hr></hr>
+            <div className="player-board-container"><PlayerBoardContainer cards={cards}/></div>
+          </div>
+          <div className="player-dash-container">
+            <div className="player-character-container"><PlayerCharacterContainer characters={characters}/></div>
+            <div className="player-hand-container"><PlayerHandContainer cards={cards}/></div>
+          </div>
           {/* <div className="dice-logic-container"><DiceLogic /></div> */}
       </div>
     </>
