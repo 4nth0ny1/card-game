@@ -4,11 +4,15 @@
   height: 100%;
 }
 
+.player-hand-container, .opponent-hand-container {
+  display: flex;
+}
+
 .card {
   border: 10px solid black;
   background: rgba(243, 216, 126, 0.658);
   border-radius: 10px;
-  width: 200px;
+  width: 100px;
   margin: 0 auto;
 }
 

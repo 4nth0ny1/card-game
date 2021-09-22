@@ -1,3 +1,26 @@
+    // types of cards 
+
+    // develop a few cards and then make random values. the user gets to keep those cards for future games. the player can choose to get random cards or save those cards. meaning that you can have your own deck or choose a random type of card instead. 
+
+    //neverending deck. kind of like how in diablo you can. you only keep the upgrades in your deck. as they show up you can elect to keep them or discard them 
+
+
+    // magic has mana cards, 
+    // whites 
+    //     base upgrades
+    //     card upgrades - upgrade other cards 
+    //     dice upgrades - 
+    // speciality cards (anyone can use these but not as well)
+    //     revive
+    //     sniper
+    //     engineer
+    //     assault
+    //     coerce
+
+    //when someone other than the specialty player plays the card then it's .50-.75 effectiveness
+
+
+
 team based card game. monthly fee. instead of buying new cards and slot machine. 
 
 1 vs 1 
