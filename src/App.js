@@ -1,7 +1,7 @@
 import './App.css';
 import React from 'react'
 
-import DiceLogic from './Components/Dice/DiceLogic'
+// import DiceLogic from './Components/Dice/DiceLogic'
 
 import OpponentHandContainer from './Components/Containers/Opponent/OpponentHandContainer'
 import OpponentCharacterContainer from './Components/Containers/Opponent/OpponentCharacterContainer'
@@ -16,7 +16,7 @@ function App(props) {
     const characters = [
         {
         id: 1, 
-        name: 'ajax',
+        name: "O'Neil",
         image: './images/warrior.png',
         type: 'leader',
         attack: 10, 
@@ -26,7 +26,7 @@ function App(props) {
         }, 
         {
         id: 2, 
-        name: 'carter',
+        name: 'Carter',
         image: './images/carter.png',
         type: 'engineer',
         attack: 10, 
@@ -36,34 +36,14 @@ function App(props) {
         }, 
         {
         id: 3, 
-        name: 'tealc',
+        name: "Teal'c",
         image: './images/carter.png',
         type: 'assault',
         attack: 20, 
         life: 100, 
         primary_skill: '',
         secondary_skill: ''
-        }, 
-        {
-        id: 4, 
-        name: 'legend',
-        image: '',
-        type: 'sniper',
-        attack: 10, 
-        life: 100, 
-        primary_skill: '',
-        secondary_skill: ''
-        }, 
-        {
-        id: 4, 
-        name: 'maverick',
-        image: '',
-        type: 'medic',
-        attack: 10, 
-        life: 100, 
-        primary_skill: '',
-        secondary_skill: ''
-        }, 
+        }
     ]
 
     const cards = [
@@ -131,7 +111,7 @@ function App(props) {
           {/* <div className="player-board-container"><PlayerBoardContainer /></div> */}
           <div className="player-character-container"><PlayerCharacterContainer characters={characters}/></div>
           <div className="player-hand-container"><PlayerHandContainer cards={cards}/></div>
-          <div className="dice-logic-container"><DiceLogic /></div>
+          {/* <div className="dice-logic-container"><DiceLogic /></div> */}
       </div>
     </>
 

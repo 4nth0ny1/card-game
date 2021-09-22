@@ -4,7 +4,7 @@
   height: 100%;
 }
 
-.player-hand-container, .opponent-hand-container {
+.player-hand-container, .opponent-hand-container, .player-character-container, .opponent-character-container {
   display: flex;
 }
 
